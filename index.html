@@ -4,246 +4,516 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Turbulent</title>
-    <link rel="shortcut icon" href="contents/images/logoicon/logo-color.png" type="image/x-icon">
+    <title>Himanshu Yadav (Code Turbulent) — Full-Stack Engineer &amp; Vulnerability Researcher</title>
+    <meta name="description" content="Himanshu Yadav (Code Turbulent) — full-stack software engineer, sole engineer at Jiva, security researcher, and creator of Omnori side projects.">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/logo-color.png" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- External Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <link rel="stylesheet" href="contents/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Google Site Verification -->
     <meta name="google-site-verification" content="BLYIC7nz-VHRdgMrYoKztwkuNGUgEsK3SU_A-vuIV84" />
 </head>
 
 <body>
+
+    <!-- Header Navigation -->
     <header id="header">
-        <div id="logo"> <img src="contents/images/logoicon/logo.png" alt="Ct"> </div>
-        <div id="navigation">
-            <ul id="navcont" type="none">
-                <li class="navitem"><a href="#home"> <img src="contents/images/logoicon/home.png" alt="🏠"> <span>Home</span></a>
-                </li>
-                <li class="navitem" herf="#project"><a href="#project"> <img src="contents/images/logoicon/projects.png"
-                            alt="[:::]"> <span>Projects</span></a> </li>
-                <li class="navitem"><a href="#about"> <img src="contents/images/logoicon/about.png" alt="🙍‍♂️">
-                        <span>About</span></a> </li>
-            </ul>
+        <div class="container nav-wrapper">
+            <a href="#home" class="logo-link">
+                <img src="assets/images/logo/logo.png" alt="Code Turbulent Logo" class="logo-img">
+            </a>
+
+            <nav class="desktop-nav">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#security" class="nav-link">Security</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-right-actions">
+                <a href="assets/docs/resume.pdf" target="_blank" class="btn btn-secondary btn-sm header-resume-btn">Resume</a>
+                <button id="mobile-toggle" class="mobile-toggle" aria-label="Toggle Menu">☰</button>
+            </div>
         </div>
     </header>
-    <div id="home">
-        <img id="mainimg" src="contents/images/me.png" alt="">
-        <div id="text">
-            <h1 id="welcomem">Welcome To <span style="color: #4B91F1;"> Code Turbulent</span></h1>
-            <div id="maintext">
-                <h1>I am a "</h1> <span id="changing"></span>
-                <h1>"</h1>
-            </div>
-            <div class="second">
-                <p><b>Himanshu Yadav</b> aka <b>Code Turbulent</b>. A <b>Full-Stack Developer</b> & <b>Cybersecurity Enthusiast</b>. Passionate about building <b>efficient</b> and <b>secure</b> digital experiences. Currently pursuing my degree in Lucknow while refining my craft.</p>
-            </div>
-        </div>
-    </div>
-    
-    <div id="about">
-        <h1>About <img src="contents/images/logoicon/about.png" alt=""></h1>
-        <div class="skillcont">
-            <div id="skills">
-                <h2>Skills</h2>
-                <div class="box"><div class="bar" style="width: 80%; text-align:end">HTML</div>80%</div>
-                <div class="box"><div class="bar" style="width: 62%; text-align:end">CSS</div>62%</div>
-                <div class="box"><div class="bar" style="width: 50%; text-align:end">JavaScript</div>50%</div>
-                <div class="box"><div class="bar" style="width: 60%; text-align:end">Node.js</div>60%</div>
-                <div class="box"><div class="bar" style="width: 40%; text-align:end">Python</div>40%</div>
-                <div class="box"><div class="bar" style="width: 100%; text-align:end">Git</div>100%</div>
-                <div class="box"><div class="bar" style="width: 45%; text-align:end">Cybersecurity</div>45%</div>
-                <div class="box"><div class="bar" style="width: 35%; text-align:end">AI/ML</div>35%</div>
-                <div class="box"><div class="bar" style="width: 50%; text-align:end">Linux</div>50%</div>
-            </div>
-            <p>
-                I started my journey with <b>HTML & CSS</b> through online courses and self-practice. Over time, I expanded my knowledge into <b>JavaScript</b> and <b>Node.js</b>, developing interactive web applications. My interest in <b>Cybersecurity</b> grew from participating in <b>CTF challenges</b>, and I am currently exploring <b>AI & Machine Learning</b> to enhance automation. Learning never stops, and I continuously strive to improve.
-            </p>
-        </div>
 
-        <div id="aboutme">
-            <h1>Me</h1>
-            <div class="abmecont">
-                <div id="mecont">
+    <!-- Mobile Navigation Menu Drawer -->
+    <div id="mobile-nav" class="mobile-nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#security" class="nav-link">Security</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="assets/docs/resume.pdf" target="_blank" class="btn btn-primary btn-sm" style="margin-top: 6px; width: 100%;">Download Resume</a>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="section">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span>Open to Software Engineering Roles &amp; Internships</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Hi, I'm Himanshu Yadav.<br>
+                        <span style="color: var(--ink-secondary); font-weight: 600;">(Code Turbulent)</span>
+                    </h1>
+
+                    <div class="hero-subtitle">
+                        Right now I'm a <span id="changing"></span>
+                    </div>
+
+                    <p class="hero-bio">
+                        Spent the last year as the <b>sole engineer</b> at <b>Jiva</b>, taking an AI-integrated Flutter app from handoff to shipped — backend, infra, and all. Outside of that I do <b>security research</b>: reverse engineering codebases and hunting vulnerabilities. Currently a CS student in Lucknow (Class of 2028).
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="assets/docs/resume.pdf" target="_blank" class="btn btn-secondary">Download Resume</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div>
+                            <div class="stat-value">1 Yr</div>
+                            <div class="stat-label">Sole Engineer at Startup</div>
+                        </div>
+                        <div>
+                            <div class="stat-value">5+</div>
+                            <div class="stat-label">Shipped SaaS &amp; Extensions</div>
+                        </div>
+                        <div>
+                            <div class="stat-value">20+</div>
+                            <div class="stat-label">Web &amp; Security Builds</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="avatar-card">
+                        <div class="avatar-img-wrapper">
+                            <img id="avatar-img" src="assets/images/me/me.png" alt="Himanshu Yadav">
+                        </div>
+                        <div class="avatar-controls">
+                            <span class="avatar-meta">Lucknow, India</span>
+                            <button id="btn-shuffle-avatar" class="btn-shuffle">Switch Photo</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Education -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-tag">BACKGROUND</div>
+                <h2 class="section-title">Experience &amp; Education</h2>
+                <p class="section-desc">Engineering ownership at a startup and formal computer science education.</p>
+
+                <div class="timeline">
+                    <div class="timeline-card">
+                        <h3 class="timeline-role">Software Engineer (Sole Engineer)</h3>
+                        <div class="timeline-meta">Jiva (AI Reading App) &bull; ~1 Year</div>
+                        <ul class="timeline-list">
+                            <li>Took over and stabilized a <b>Flutter</b> codebase handed off from an external agency, owning it end-to-end as the sole engineer.</li>
+                            <li>Architected a <b>Node.js / Express / WebSockets</b> backend for real-time data communication.</li>
+                            <li>Integrated AI capabilities directly into the app, including document search and user intent classification.</li>
+                            <li>Set up <b>AWS</b> infrastructure and automated deployment with <b>GitHub Actions</b> CI/CD.</li>
+                            <li>Implemented authentication, account management, and storage with <b>Firebase</b>.</li>
+                            <li>Designed and shipped the company's marketing website from scratch.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-card">
+                        <h3 class="timeline-role">Bachelor of Technology, Computer Science</h3>
+                        <div class="timeline-meta">Babasaheb Bhimrao Ambedkar University, Lucknow &bull; Expected Graduation: July 2028</div>
+                        <ul class="timeline-list">
+                            <li>Focused on Core Data Structures, Operating Systems, Computer Networks, and Cyber Security fundamentals.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Showcase -->
+        <section id="projects" class="section">
+            <div class="container">
+                <div class="section-tag">PORTFOLIO</div>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-desc">SaaS extensions, client platforms, and security labs.</p>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="omnori">Omnori SaaS &amp; Tools</button>
+                    <button class="filter-btn" data-filter="freelance">Client Work</button>
+                    <button class="filter-btn" data-filter="labs">Security &amp; Labs</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1: Nori Cam -->
+                    <article class="project-card" data-category="omnori">
+                        <div class="project-thumb">
+                            <div class="icon-badge-box">NC</div>
+                            <span class="project-category-tag">Extension</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Nori Cam</h3>
+                            <p class="project-desc">Chrome extension camera for calls and recordings — features text/image overlays, filters, and zoom.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Chrome Extension API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Omnori/Nori-V-Cam" target="_blank" class="btn btn-secondary btn-sm">GitHub Source ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Pomori -->
+                    <article class="project-card" data-category="omnori">
+                        <div class="project-thumb">
+                            <div class="icon-badge-box">PM</div>
+                            <span class="project-category-tag">SaaS</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Pomori</h3>
+                            <p class="project-desc">A customizable Pomodoro-style timer extension that syncs across multiple accounts.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Web Sync</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Omnori/PomoInfinity" target="_blank" class="btn btn-secondary btn-sm">GitHub Source ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Notes 101 -->
+                    <article class="project-card" data-category="omnori">
+                        <div class="project-thumb">
+                            <div class="icon-badge-box">N1</div>
+                            <span class="project-category-tag">Discord Bot</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Notes 101</h3>
+                            <p class="project-desc">Discord bot that transcribes voice meetings into notes and tracks team progress.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Speech-to-Text</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Omnori/Notes-101" target="_blank" class="btn btn-secondary btn-sm">GitHub Source ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: Dark Moon -->
+                    <article class="project-card" data-category="omnori">
+                        <div class="project-thumb">
+                            <div class="icon-badge-box">DM</div>
+                            <span class="project-category-tag">Desktop</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Dark Moon</h3>
+                            <p class="project-desc">Desktop software for native external display brightness control on Windows and Linux.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">DDC/CI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Omnori/Dark-moon" target="_blank" class="btn btn-secondary btn-sm">GitHub Source ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: Nori Scrapes Images -->
+                    <article class="project-card" data-category="omnori">
+                        <div class="project-thumb">
+                            <div class="icon-badge-box">NS</div>
+                            <span class="project-category-tag">Extension</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Nori Scrapes Images</h3>
+                            <p class="project-desc">Chrome extension that extracts product image links from websites, e-commerce included.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">DOM Scraper</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/Omnori/Nori-Scraps-image" target="_blank" class="btn btn-secondary btn-sm">GitHub Source ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 6: Sweta Public School -->
+                    <article class="project-card" data-category="freelance">
+                        <div class="project-thumb">
+                            <img src="assets/images/projects/sweta-public-school.png" alt="Sweta Public School">
+                            <span class="project-category-tag">Client</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Sweta Public School</h3>
+                            <p class="project-desc">Designed and built a website for an educational institute, tailored to their branding and content.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://codeturbulent.github.io/swetapublicschool/" target="_blank" class="btn btn-primary btn-sm">View Live ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 7: Go With Marine -->
+                    <article class="project-card" data-category="freelance">
+                        <div class="project-thumb">
+                            <img src="assets/images/projects/go-with-marine.png" alt="Go With Marine">
+                            <span class="project-category-tag">Client</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Go With Marine</h3>
+                            <p class="project-desc">Reading-materials platform built for a marine university curriculum.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">Web Platform</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://codeturbulent.github.io/Go-with-marine/" target="_blank" class="btn btn-primary btn-sm">View Live ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 8: Lotus NGO -->
+                    <article class="project-card" data-category="freelance">
+                        <div class="project-thumb">
+                            <img src="assets/images/projects/lotus-ngo.png" alt="Lotus NGO">
+                            <span class="project-category-tag">Client</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Lotus NGO</h3>
+                            <p class="project-desc">Pitched and built a website for a non-profit organization to grow their digital presence.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">Web Design</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/codeturbulent/freelance-projects" target="_blank" class="btn btn-secondary btn-sm">GitHub Source ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 9: Leads Mastery -->
+                    <article class="project-card" data-category="freelance">
+                        <div class="project-thumb">
+                            <img src="assets/images/projects/leads-mastery.png" alt="Leads Mastery">
+                            <span class="project-category-tag">Client</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Leads Mastery</h3>
+                            <p class="project-desc">Client-facing agency website designed to drive lead generation.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">Agency UI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/codeturbulent/freelance-projects" target="_blank" class="btn btn-secondary btn-sm">GitHub Source ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 10: Client Portfolios -->
+                    <article class="project-card" data-category="freelance">
+                        <div class="project-thumb">
+                            <img src="assets/images/projects/portfolio-sachin.png" alt="Client Portfolios">
+                            <span class="project-category-tag">Client</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Client Portfolio Sites</h3>
+                            <p class="project-desc">Built personal portfolio websites for individual clients.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">Responsive UI</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/codeturbulent/freelance-projects" target="_blank" class="btn btn-secondary btn-sm">GitHub Source ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 11: QR Tool -->
+                    <article class="project-card" data-category="labs">
+                        <div class="project-thumb">
+                            <div class="icon-badge-box">QR</div>
+                            <span class="project-category-tag">Tool</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">QR Tool</h3>
+                            <p class="project-desc">Static web tool to generate and read styled QR codes.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://codeturbulent.github.io/QR/" target="_blank" class="btn btn-primary btn-sm">View Live ↗</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 12: Puzzle Solver -->
+                    <article class="project-card" data-category="labs">
+                        <div class="project-thumb">
+                            <div class="icon-badge-box">PS</div>
+                            <span class="project-category-tag">Algorithm</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Puzzle Solver</h3>
+                            <p class="project-desc">Algorithm solver that automatically finds path to the goal state.</p>
+                            <div class="project-tags">
+                                <span class="tech-tag">Algorithms</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://codeturbulent.github.io/Solver-Porject/" target="_blank" class="btn btn-primary btn-sm">View Live ↗</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Matrix -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-tag">SKILLS &amp; TOOLS</div>
+                <h2 class="section-title">Technical Arsenal</h2>
+                <p class="section-desc">Languages, frameworks, infrastructure, and core focus areas.</p>
+
+                <div class="skills-wrapper">
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">Languages</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">Python</span>
+                            <span class="skill-pill">Dart</span>
+                            <span class="skill-pill">C++</span>
+                            <span class="skill-pill">C</span>
+                            <span class="skill-pill">HTML</span>
+                            <span class="skill-pill">CSS</span>
+                            <span class="skill-pill">Shell</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">Frameworks &amp; Backend</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Flutter</span>
+                            <span class="skill-pill">Node.js</span>
+                            <span class="skill-pill">Express</span>
+                            <span class="skill-pill">WebSockets</span>
+                            <span class="skill-pill">REST APIs</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">Infra &amp; Tools</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">AWS</span>
+                            <span class="skill-pill">Firebase</span>
+                            <span class="skill-pill">GitHub Actions</span>
+                            <span class="skill-pill">Linux</span>
+                            <span class="skill-pill">Git</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card">
+                        <h3 class="skill-card-title">Focus Areas</h3>
+                        <div class="skill-pills">
+                            <span class="skill-pill">Web Development</span>
+                            <span class="skill-pill">App Development</span>
+                            <span class="skill-pill">Security &amp; Reverse Engineering</span>
+                            <span class="skill-pill">AI Integration</span>
+                            <span class="skill-pill">DevOps &amp; Automation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Security Spotlight -->
+        <section id="security" class="section">
+            <div class="container">
+                <div class="section-tag">SECURITY RESEARCH</div>
+                <h2 class="section-title">Security &amp; Reverse Engineering</h2>
+
+                <div class="security-card">
                     <p>
-                        <b>CodeTurbulent</b> is a space where I share my knowledge and experience in <b>Web Development</b>, <b>Cybersecurity</b>, and <b>Technology</b>. I enjoy working on <b>real-world projects</b>, tackling challenges, and building <b>efficient</b> solutions. 
-                        Born in <b>Farrukhabad, Uttar Pradesh</b>, I am currently studying in <b>Lucknow</b>. Outside of coding, I participate in **Capture The Flag** competitions, tech events, and open-source projects.
-                        <a href="contents/images/resume.pdf" target="_blank"><b>Click here to Download Resume</b></a>
+                        I spend a lot of my own time on <b>bug bounty hunting</b> and vulnerability research — tracing through unfamiliar applications to understand how they actually work. I write custom <b>Linux shell scripts</b> alongside standard security tooling to automate recon and tracing, which speeds up how fast I can find issues.
+                    </p>
+                    <p>
+                        It's the same "read the code until it makes sense" muscle I use for regular debugging, just pointed at someone else's assumptions instead of my own.
                     </p>
                 </div>
-                <div id="meimg"></div>
             </div>
-        </div>
-    </div>
+        </section>
 
+        <!-- About Me -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-tag">ABOUT ME</div>
+                <h2 class="section-title">Me</h2>
 
-    </div>
-    <div id="project">
-        <h1 id="projects"> Projects <img src="contents/images/logoicon/projects.png" alt=""></h1>
-        <div id="card-cont">
-            <div class="card">
-                <div class="imgb">
-                    <div> <img src="contents/images/8numbers.png"></div>
-                </div>
-                <div class="context">
-                    <h2>8numbers</h2>
-                    <h4>It is a type of game where you have to fill 8 numbers in 8 boxes. But in a certain manner </h4>
-                    <a href="https://codeturbulentbyhimanshu.on.drv.tw/codeing/my%20projects/8number/">View Page </a>
-                </div>
-            </div>
-            <div class="card" id="active">
-                <div class="imgb">
-                    <div> <img src="contents/images/Barwn.png"></div>
-                </div>
-                <div class="context">
-                    <h2>Barwn</h2>
-                    <h4>It is a ui i made For  Refrence you can see</h4> <a href="https://codeturbulentbyhimanshu.on.drv.tw/codeing/my%20projects/calculator/">View Page</a>
+                <div class="about-card">
+                    <p>
+                        <b>CodeTurbulent</b> is a space where I share my knowledge and experience in <b>Web Development</b>, <b>Cybersecurity</b>, and <b>Technology</b>. I enjoy working on real-world projects, tackling challenges, and building efficient solutions.
+                    </p>
+                    <p>
+                        Born in <b>Farrukhabad, Uttar Pradesh</b>, I am currently studying in <b>Lucknow</b>. Outside of coding, I participate in <b>Capture The Flag</b> competitions, tech events, and open-source projects.
+                    </p>
+                    <div style="margin-top: 20px;">
+                        <a href="assets/docs/resume.pdf" target="_blank" class="btn btn-primary btn-sm">Click here to Download Resume</a>
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="imgb">
-                    <div> <img src="contents/images/Calculator.png"></div>
-                </div>
-                <div class="context">
-                    <h2>Calculator</h2>
-                    <h4>It is a simple Calculator</h4>
-                    <a href="https://codeturbulentbyhimanshu.on.drv.tw/codeing/my%20projects/8number/">View Page </a>
-                </div>
-            </div>   <div class="card">
-                <div class="imgb">
-                    <div> <img src="contents/images/Decode.png"></div>
-                </div>
-                <div class="context">
-                    <h2>Decode</h2>
-                    <h4>This website i made when i was bored and wanted to have some hands in Cybersecurity</h4>
-                    <a href="https://codeturbulentbyhimanshu.on.drv.tw/codeing/my%20projects/8number/">View Page </a>
-                </div>
-            </div>   <div class="card">
-                <div class="imgb">
-                    <div> <img src="contents/images/freshlydropped.png"></div>
-                </div>
-                <div class="context">
-                    <h2>Freshlydropped</h2>
-                    <h4>This is a ui i created when i was also bored</h4>
-                    <a href="https://codeturbulentbyhimanshu.on.drv.tw/codeing/my%20projects/8number/">View Page </a>
-                </div>
-            </div>   <div class="card">
-                <div class="imgb">
-                    <div> <img src="contents/images/Go With Marine Home.png"></div>
-                </div>
-                <div class="context">
-                    <h2>Go With Marine</h2>
-                    <h4>Dont underestimete this one one day this will be a great app for students but for now its underdevlopment</h4>
-                    <a href="https://codeturbulentbyhimanshu.on.drv.tw/codeing/my%20projects/8number/">View Page </a>
-                </div>
-            </div>   <div class="card">
-                <div class="imgb">
-                    <div> <img src="contents/images/HAPPY NEW YEAR.png"></div>
-                </div>
-                <div class="context">
-                    <h2>HAPPY NEW YEAR</h2>
-                    <h4>I was Waiting for new year and i created This </h4>
-                    <a href="https://codeturbulentbyhimanshu.on.drv.tw/codeing/my%20projects/8number/">View Page </a>
-                </div>
-            </div>   <div class="card">
-                <div class="imgb">
-                    <div> <img src="contents/images/Leads Mastery Home.png"></div>
-                </div>
-                <div class="context">
-                    <h2>Leads Mastery</h2>
-                    <h4>This was One of my first Agency i piched and got some in hands</h4>
-                    <a href="https://codeturbulentbyhimanshu.on.drv.tw/codeing/my%20projects/8number/">View Page </a>
-                </div>
-            </div>   <div class="card">
-                <div class="imgb">
-                    <div> <img src="contents/images/Lotus Non Government Org.png"></div>
-                </div>
-                <div class="context">
-                    <h2>Lotus NGo</h2>
-                    <h4>this was one more ngo i pitched and worked for them</h4>
-                    <a href="https://codeturbulentbyhimanshu.on.drv.tw/codeing/my%20projects/8number/">View Page </a>
-                </div>
-            </div>   <div class="card">
-                <div class="imgb">
-                    <div> <img src="contents/images/Portfolio Website of Sachin.png"></div>
-                </div>
-                <div class="context">
-                    <h2>Someones Portfolio</h2>
-                    <h4>Not only this i also created peoples personal Portfolios</h4>
-                    <a href="https://codeturbulentbyhimanshu.on.drv.tw/codeing/my%20projects/8number/">View Page </a>
-                </div>
-            </div>   <div class="card">
-                <div class="imgb">
-                    <div> <img src="contents/images/Screenshot 2025-03-15 at 21-47-39 LilBud Lil Bud With You.png"></div>
-                </div>
-                <div class="context">
-                    <h2>Lil Bud</h2>
-                    <h4>Once This Was a startup but the fun was it never started</h4>
-                    <a href="https://codeturbulentbyhimanshu.on.drv.tw/codeing/my%20projects/8number/">View Page </a>
-                </div>
-            </div>   <div class="card">
-                <div class="imgb">
-                    <div> <img src="contents/images/Sweta Public School.png"></div>
-                </div>
-                <div class="context">
-                    <h2>Sweta Public School</h2>
-                    <h4>First ever educational instute i created a website that they like accordind to their interset</h4>
-                    <a href="https://codeturbulentbyhimanshu.on.drv.tw/codeing/my%20projects/8number/">View Page </a>
-                </div>
-            </div>   <div class="card">
-                <div class="imgb">
-                    <div> <img src="contents/images/To Do List.png"></div>
-                </div>
-                <div class="context">
-                    <h2></h2>
-                    <h4>This was my first webpage i used soem javascript in it when i was in tenth</h4>
-                    <a href="https://codeturbulentbyhimanshu.on.drv.tw/codeing/my%20projects/8number/">View Page </a>
-                </div>
-            </div>   <div class="card">
-                <div class="imgb">
-                    <div> <img src="contents/images/Watch R.D Pared.png"></div>
-                </div>
-                <div class="context">
-                    <h2>Watch RD Pared</h2>
-                    <h4>This Is what happen when a student in 11th want to watch rd parade  in his own style </h4>
-                    <a href="https://codeturbulentbyhimanshu.on.drv.tw/codeing/my%20projects/8number/">View Page </a>
-                </div>
+        </section>
+    </main>
+
+    <!-- Footer & Social Links -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://github.com/codeturbulent" target="_blank" class="social-link" aria-label="GitHub">
+                    <svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/Codeturbulent" target="_blank" class="social-link" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                </a>
+                <a href="https://www.twitter.com/Yetri1740343" target="_blank" class="social-link" aria-label="Twitter">
+                    <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/codeturbulent/" target="_blank" class="social-link" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100093226451987" target="_blank" class="social-link" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
             </div>
-        </div>
-        <div id="dots">
-            <a> <button class="arrow-right">></button></a>
-            <a> <button class="arrow-left" onclick="scroll(0,400)">
-                    < </button></a>
-        </div>
-    </div>
-
-    <footer>
-
-        <img src="contents/images/logoicon/logo.png" height="35px" alt="">
-        <div>
-            <p>Copyright © 2023 Code Turbulent
-            </p>
-
-            <p>
-                Developed By: Himanshu Yadav AKA Code Turbulent
-            </p>
+            <p class="footer-copy">&copy; <span id="copyright-year">2026</span> Code Turbulent. All rights reserved.</p>
+            <p style="font-size: 13px;">Developed By: Himanshu Yadav (Code Turbulent)</p>
         </div>
     </footer>
 
-    <div id="social">
-        <img src="contents/images/logoicon/social.png" id="socialshow" onclick="showsocial()" alt="0">
-        <img src="contents/images/logoicon/close.png" id="socialhide" style="display: none;" onclick="hidesocial()" alt="0">
-        <div id="inner">
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100093226451987"><img
-                    src="contents/images/logoicon/facebook.png" alt="0" class="imgs"> </a>
-            <a target="_blank" href="https://www.linkedin.com/in/Codeturbulent"><img src="contents/images/logoicon/linkedin.png"
-                    alt="0" class="imgs"></a>
-            <a target="_blank" href="https://www.instagram.com/codeturbulent/"><img src="contents/images/logoicon/instagram.png"
-                    alt="0" class="imgs"> </a>
-            <a target="_blank" href="https://www.twitter.com/Yetri1740343"><img src="contents/images/logoicon/twitter.png"
-                    alt="0" class="imgs"> </a>
-        </div>
-    </div>
+    <script src="assets/js/script.js"></script>
 </body>
-<script src="contents/script.js"></script>
-<link rel="stylesheet" href="contents/style.css">
 
 </html>

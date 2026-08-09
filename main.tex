@@ -1,0 +1,189 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Himanshu Yadav} \\ \vspace{1pt}
+    \small Farrukhabad, Uttar Pradesh $|$ +91-8005001105 $|$ \href{mailto:himanshuyadav1740343@gmail.com}{\underline{himanshuyadav1740343@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/codeturbulent}{\underline{linkedin.com/in/codeturbulent}} $|$
+    \href{https://github.com/codeturbulent}{\underline{github.com/codeturbulent}} $|$
+    \href{https://codeturbulent.github.io}{\underline{codeturbulent.github.io}}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{Highly focused and product-driven Computer Science student (Expected 2028) with hands-on experience operating as a sole engineer in a startup environment. Possesses a strong aptitude for reverse engineering, deep-diving into complex codebases, and automating workflows to maximize development speed. Proven track record in full-stack architecture, AI integration, and security analysis. Seeking a software engineering internship or entry-level role to leverage intense debugging capabilities and a passion for building robust, secure, and efficient applications.}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Babasaheb Bhimrao Ambedkar University}{Lucknow, Uttar Pradesh}
+      {Bachelor of Technology in Computer Science}{2024 -- Expected July 2028}
+    \resumeSubheading
+      {Sainik School Chittorgarh}{Chittorgarh, Rajasthan}
+      {High School Education (Focus in Python \& Programming)}{2022 -- 2024}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer}{June, 2025 -- July, 2026}
+      {Jiva.}{Remote / Lucknow}
+      \resumeItemListStart
+        \resumeItem{Spearheaded the end-to-end development of an AI-integrated reading application using Flutter, successfully taking over and stabilizing the codebase from an external agency.}
+        \resumeItem{Architected a robust backend architecture using Node.js, Express, and WebSockets to enable seamless, real-time data communication.}
+        \resumeItem{Integrated advanced AI capabilities directly into the application, implementing document search and user intent classification.}
+        \resumeItem{Engineered the complete deployment infrastructure by setting up AWS servers and automating CI/CD pipelines via GitHub Actions.}
+        \resumeItem{Implemented secure user authentication, account management, and database solutions utilizing Firebase.}
+        \resumeItem{Designed and deployed the company's official website from scratch using HTML and CSS, fully managing their online web presence.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS & SECURITY-----------
+\section{Projects \& Security Analysis}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Security Analysis \& Bug Bounty Hunting} $|$ \emph{Linux, Custom Shell Scripts}}{}
+          \resumeItemListStart
+            \resumeItem{Conducted deep-dive security assessments and tracing on various applications to identify vulnerabilities and reverse-engineer core functionalities.}
+            \resumeItem{Developed custom Linux shell scripts alongside standard security tools to automate the tracing process and increase the speed of vulnerability discovery.}
+            \resumeItem{Leveraged advanced debugging and code-reading capabilities to analyze and understand complex, third-party codebases.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Omnori} $|$ \emph{Product Ecosystem -- JavaScript, C\#, Shell} $|$ \href{https://omnori.github.io/}{\underline{omnori.github.io}}}{}
+          \resumeItemListStart
+            \resumeItem{Building and shipping a suite of open-source productivity tools under one brand: \textbf{Nori Cam} and \textbf{Pomori} (Chrome extensions for video calls and Pomodoro timing), \textbf{Notes 101} (an AI Discord bot that transcribes voice meetings into notes), \textbf{Dark Moon} (a native Windows/Linux display brightness utility), and \textbf{Nori Scrapes Images} (a Chrome extension for bulk product-image scraping).}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Frontend Portfolio} $|$ \emph{HTML, CSS, JavaScript}}{}
+          \resumeItemListStart
+            \resumeItem{Designed and built over 20 distinct frontend user interfaces, including modern client-facing school and NGO websites, to master responsive design, cross-browser compatibility, and modern web environments.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, Java, Dart, Python, C++, C, C\#, HTML, CSS, Shell Scripting, MySQL} \\
+     \textbf{Frameworks \& Backend}{: Flutter, Node.js, Express} \\
+     \textbf{Infrastructure \& Tools}{: AWS, GitHub Actions (CI/CD), Firebase, WebSockets, VS Code, Linux} \\
+     \textbf{Core Competencies}{: Full-Stack Development, AI Integration, Reverse Engineering, Bug Bounty/Security, DevOps, Automation} \\
+     \textbf{Spoken Languages}{: English, Hindi, Japanese}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
